@@ -1,7 +1,7 @@
-let img = document.getElementById('img');
+const img = document.getElementById('img');
 
-zoom = () => {
-    img.classList.toggle('zoom');
+function zoom() {
+    this.classList.toggle('zoom');
 };
 
-img.addEventListener('click', zoom);
+img.addEventListener('click', zoom.bind(img));
